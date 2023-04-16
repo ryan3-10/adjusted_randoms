@@ -1,0 +1,60 @@
+Problem Solving
+
+1. The Problem:
+Create a program where players are given a random character from a pool that 
+either he, or all players involved have created. The program allows the user
+to decide how many characters this list will consist of, and then they choose
+once character at a time to add (or remove, in banning mode) to that list.
+
+2. The Model:
+Classes will be created for Set, Player, Team, and Character.
+
+Each Set instance will have a list of either 2 players (for singles) or 2 teams
+(for doubles). It will also have a mode attribute (singles or doubles), a 
+selection type attribute (draft or bans), and a picks attribute (int). These 3
+will all be given as parameters based on what the user selects. 
+
+Each player instance will have a name given as a parameter, and also a 'pool'
+list which will hold each of their selected characters. There will also be a 
+'collective_pool' list which will be included as a class attribute for the 
+Player class. 
+
+Each Team instance will include a list of the 2 players on that
+team. 
+
+Each Character instance will include both the character's name, and an
+image of the character, both given as parameters. 
+
+The user selects doubles or singles, draft or bans, and then lists the names of
+each player, and then the selections begin. The selected character will be
+added to the respective player's list, as well as the collective list. Finally,
+the user selects collective, or individual pools, and then the players are 
+assigned a character from the respective list at random. 
+
+3. The Algorithm: 
+Character instances are made before hand:
+ganondorf = Character("Ganondorf", "ganondofr.png)
+
+The user will select the mode, selection type, and selection count. Then a Set
+instances is created:
+ current_set = Set(mode, selection, count)
+
+The user lists players names and they are created
+player1 = Player("Bob")
+player2 = Player("Fred")
+
+The players take turns selecting characters to add or remove from their lists:
+player1.pool.append(wolf)
+Players.collective_pool.append(wolf)
+player2.pool.append(lucina)
+Players.collective_pool.append(lucina)
+
+Each player is assigned a character at random from his (or the collective) list:
+print(f"{player1.name}: {wolf}
+print(f"{player2.name}: {lucina}
+
+The user is given the option to reassign randomly, to start the draft over, switch
+selection type, or exit the program.
+
+
+
