@@ -7,7 +7,7 @@ To start, the user will be given button option to choose between singles or doub
 Singles is a 1v1 match, while doubles is a 2v2 match.
 
 -Individulal/Collective: 
-In invidual pools, each player drafts characters into his own personal pool, and is randomly assigned a character from hiw own pool.
+In invidual pools, each player drafts characters into his own personal pool, and is randomly assigned a character from his own pool.
 In collective, each player's chracter selections go into a single large pool, and everyone is randomly assigned a character from that pool. In other words, you will often have to play a character that another player drafted into the pool. This mode will be frustrating for some but will really test your skill with various characters that your opponent(s) wants to draft.
 
 -Number of picks:
@@ -15,12 +15,7 @@ This is simply the number of characters that each player will add to the pool, w
 
 After these options are selected, we move to the draft screen, where each player takes turns selecting the number of characters that they inputed in the 'picks' textbox.
 
-Next, each player is randomly assigned a character from the appropriate pool (his personal pool, or the collective pool). The screen will display this information so each player knows their assignemnt. At the bottom of this screen there will be a "Reassign" button. Clicking this button simply re-randomizes every player's assignment, and then displays the new information. 
-
-For now, I plan to include the following classes:
-Character, Set, Player, Team
+Next, each player is randomly assigned a character from the appropriate pool (his personal pool, or the collective pool, depending on the option selected). The screen will display this information so each player knows his/her assignemnt. At the bottom of this screen there will be a "Next Game" button. Clicking this button simply rerandomizes each player's assignment, and then displays the new information. 
 
 This program will be completed using Kivy for the GUI.
-
-Of course, I'm open to adding more classes, features, or other details if the assignment requires something more complex, but this is the basic idea for what I want my program to accomplish.
 
